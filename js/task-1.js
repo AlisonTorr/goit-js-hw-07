@@ -2,14 +2,16 @@ const categoriesListRef = document.querySelector("#categories");
 const categoriesNumberRef = categoriesListRef.children.length;
 console.log(`в списке ${categoriesNumberRef} категории`);
 
-const itemRef = document.querySelectorAll(".item");
-console.log(itemRef);
+const itemRefs = document.querySelectorAll(".item");
+console.log(itemRefs);
 
-itemRef.map((...itemRef) => {
-  const itemHeadRef = document.querySelectorAll("h2");
-  const itemNameRef = itemHeadRef.textContent;
-  const lastChildItems = itemRef.lastChild.length;
-  console.log(
-    `категория: ${itemNameRef}, количество элементов: ${lastChildItems}`
-  );
-});
+const categoryDesc = (itemRefs) => {
+  return itemRefs.forEach((itemRef) => {
+    const itemHeadRef = document.querySelector("h2");
+    const itemNameRef = itemHeadRef.textContent;
+    const lastChildItems = itemRef.lastChild.length;
+    return `категория: ${itemNameRef}, количество элементов: ${lastChildItems}`;
+  });
+};
+
+console.log(categoryDesc(itemRefs));
