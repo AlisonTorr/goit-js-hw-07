@@ -9,22 +9,12 @@ const ingredients = [
   "Приправы",
 ];
 
-// ingredients.forEach((ingredients, idx) => {
-//   const ingredient = ingredients[idx];
-
-//   console.log(ingredient);
-// });
-
-const createIngredientItem = (ingredients) => {
+const ingredientItem = ingredients.map((text) => {
   const ingredientRef = document.createElement("li");
-  ingredientRef.textContent = ingredients[i];
+  ingredientRef.textContent = text;
 
   return ingredientRef;
-};
-
-const ingredientItem = ingredients.map((ingredients) =>
-  createIngredientItem(ingredients[i])
-);
+});
 
 const ingRoot = document.querySelector("#ingredients");
 
