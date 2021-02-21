@@ -16,8 +16,22 @@ const images = [
   },
 ];
 
-const liRef = document.createElement("li");
+const createImgItem = (image) => {
+  const liRef = document.createElement("li");
 
-const imgRef = document.createElement("img");
-imgRef.setAttribute(src, image.url);
-imgRef.setAttribute(alt, image.alt);
+  const imgRef = document.createElement("img");
+  imgRef.setAttribute(src, image.url);
+  imgRef.setAttribute(alt, image.alt);
+
+  liRef.appendChild(imgRef);
+
+  return liRef;
+};
+
+const imgItems = images.map((image) => createImgItem(image));
+console.log(imgItems);
+
+const imgListRef = document.querySelector("#galary");
+console.log(imgListRef);
+
+imgListRef.append(...imgItems);
