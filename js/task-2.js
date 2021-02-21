@@ -18,4 +18,4 @@ const ingredientItem = ingredients.map((text) => {
 
 const ingRoot = document.querySelector("#ingredients");
 
-ingRoot.appendChild(ingredientRef);
+ingRoot.appendChild(ingredientItem);
