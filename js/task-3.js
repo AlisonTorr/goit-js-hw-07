@@ -20,7 +20,7 @@ const createImgItem = (image) => {
   const liRef = document.createElement("li");
 
   const imgRef = document.createElement("img");
-  imgRef.setAttribute(src, image.url);
+  imgRef.setAttribute(url, image.url);
   imgRef.setAttribute(alt, image.alt);
 
   liRef.appendChild(imgRef);
