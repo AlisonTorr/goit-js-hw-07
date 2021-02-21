@@ -22,8 +22,8 @@ const createImgItem = (image) => {
   const imgRef = document.createElement("img");
   imgRef.setAttribute("src", image.url);
   imgRef.setAttribute("alt", image.alt);
-  imgRef.style.height = "100px";
-  imgRef.style.width = "100%";
+  imgRef.style.height = "200px";
+  imgRef.style.outline = "2px solid black";
 
   liRef.appendChild(imgRef);
 
