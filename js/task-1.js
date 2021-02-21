@@ -53,9 +53,10 @@ const categoriesNumberRef = categoriesListRef.children.length;
 console.log(`в списке ${categoriesNumberRef} категории`);
 
 const itemRef = document.querySelectorAll(".item");
-const itemNameRef = document.querySelectorAll("h2");
-itemRef.forEach((itemRef) =>
+
+itemRef.forEach((itemRef) => {
+  const itemNameRef = document.querySelectorAll("h2");
   console.log(
-    `категория: ${itemNameRef}, количество элементов: ${itemRef.children.length}`
-  )
-);
+    `категория: ${itemNameRef}, количество элементов: ${itemRef.lastChild.length}`
+  );
+});
