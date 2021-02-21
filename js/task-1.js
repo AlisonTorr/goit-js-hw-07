@@ -5,7 +5,7 @@ console.log(`в списке ${categoriesNumberRef} категории`);
 const itemRefs = document.querySelectorAll(".item");
 console.log(itemRefs);
 
-const categoryDesc = Array.from(...itemefs);
+const categoryDesc = Array.from(...itemRefs);
 
 getCategoryDesc = categoryDesc.forEach((ref) => {
   const itemHeadRef = document.querySelector("h2");
