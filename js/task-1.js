@@ -5,13 +5,13 @@ console.log(`в списке ${categoriesNumberRef} категории`);
 const itemRefs = document.querySelectorAll(".item");
 console.log(itemRefs);
 
-const categoryDesc = (itemRefs) => {
-  return itemRefs.forEach((itemRef) => {
-    const itemHeadRef = document.querySelector("h2");
-    const itemNameRef = itemHeadRef.textContent;
-    const lastChildItems = itemRef.lastChild.length;
-    return `категория: ${itemNameRef}, количество элементов: ${lastChildItems}`;
-  });
-};
+const categoryDesc = Array.from(...itemefs);
 
-console.log(categoryDesc(itemRefs));
+getCategoryDesc = categoryDesc.forEach((ref) => {
+  const itemHeadRef = document.querySelector("h2");
+  const itemNameRef = itemHeadRef.textContent;
+  const lastChildItems = ref.lastChild.length;
+  return `категория: ${itemNameRef}, количество элементов: ${lastChildItems}`;
+});
+
+console.log(getCategoryDesc(itemRefs));
