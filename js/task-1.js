@@ -6,6 +6,7 @@ const itemRefs = document.querySelectorAll(".item");
 console.log(itemRefs);
 
 for (const itemRef of itemRefs) {
-  return `категория: ${itemRef.firstElementChild.textContent} , 
-  количество элементов: ${itemRef.lastElementChild.children.length}`;
+  console.log(
+    `категория: ${itemRef.firstElementChild.textContent} , количество элементов: ${itemRef.lastElementChild.children.length}`
+  );
 }
