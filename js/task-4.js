@@ -1,7 +1,7 @@
 const cuountValueRef = document.querySelector("#value");
 console.log(cuountValueRef);
 
-const startCounterValue = Num(cuountValueRef.textContent);
+const startCounterValue = Number(cuountValueRef.textContent);
 console.log(startCounterValue);
 
 const increment = (startCounterValue) => (startCounterValue += 1);
