@@ -10,4 +10,4 @@ const handleOutputChange = (event) => {
   } else nameOutputRef.textContent = defaultOutPutRef;
 };
 
-inputRef.addEventListener("input", () => handleOutputChange());
+inputRef.addEventListener("input", (event) => handleOutputChange());
