@@ -7,7 +7,9 @@ console.log(nameOutputTextRef);
 const defaultOutPutRef = "незнакомец";
 
 const handleOutputChange = (event) => {
-  nameOutputTextRef = inputRef === null ? defaultOutPutRef : event.target.value;
+  nameOutputTextRef = event.target.value
+    ? event.target.value
+    : defaultOutPutRef;
 };
 
 inputRef.addEventListener("input", () => handleOutputChange);
