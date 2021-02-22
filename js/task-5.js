@@ -10,14 +10,14 @@ const defaultOutPutRef = "незнакомец";
 //   } else nameOutputRef.textContent = defaultOutPutRef;
 // };
 
-// function handleOutputChange(event) {
-//   if (event.target.value) {
-//     nameOutputRef.textContent = event.target.value;
-//   } else nameOutputRef.textContent = defaultOutPutRef;
-// }
-
 function handleOutputChange(event) {
-  nameOutputRef.textContent = event.target.value;
+  if (event.target.value) {
+    nameOutputRef.textContent = event.target.value;
+  } else nameOutputRef.textContent = defaultOutPutRef;
 }
 
-inputRef.addEventListener("input", (event) => handleOutputChange());
+// function handleOutputChange(event) {
+//   nameOutputRef.textContent = event.target.value;
+// }
+
+inputRef.addEventListener("input", handleOutputChange());
