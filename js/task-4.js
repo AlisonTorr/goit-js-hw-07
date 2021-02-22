@@ -1,15 +1,15 @@
 const cuountValueRef = document.querySelector("#value");
 console.log(cuountValueRef);
 
-const startCounterValue = Number(cuountValueRef.textContent);
-console.log(startCounterValue);
+const currentCounterValue = Number(cuountValueRef.textContent);
+console.log(currentCounterValue);
 
-const increment = (startCounterValue) => (startCounterValue += 1);
+const increment = (currentCounterValue) => (currentCounterValue += 1);
 
-const decrement = (startCounterValue) => (startCounterValue -= 1);
+const decrement = (currentCounterValue) => (currentCounterValue -= 1);
 
 const incrementBtnRef = document.querySelector(".js-increment-btn");
-incrementBtnRef.addEventListener("click", () => increment(startCounterValue));
+incrementBtnRef.addEventListener("click", () => increment(currentCounterValue));
 
 const decrementBtnRef = document.querySelector(".js-decrement-btn");
-decrementBtnRef.addEventListener("click", () => decrement(startCounterValue));
+decrementBtnRef.addEventListener("click", () => decrement(currentCounterValue));
