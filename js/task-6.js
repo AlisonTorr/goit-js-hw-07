@@ -4,17 +4,19 @@ let inputTextRef = inputRef.textContent;
 const validInputLengthRef = inputRef.getAttribute("data-length");
 console.log(validInputLengthRef);
 
-let inputLengthRef;
+// let inputLengthRef;
 
-const handleInputChange = (event) => {
-  inputTextRef = event.target.value;
-  inputLengthRef = inputTextRef.length;
-  return inputLengthRef;
-};
+// const handleInputChange = (event) => {
+//   ininputLengthRef = event.target.value.length;
 
-inputRef.addEventListener("input", handleInputChange);
+//   return inputLengthRef;
+// };
 
-console.log(inputLengthRef);
+// console.log(inputLengthRef);
+
+// inputRef.addEventListener("input", handleInputChange);
+
+// console.log(inputLengthRef);
 
 const validate = (str) => {
   return str.length === validInputLengthRef;
