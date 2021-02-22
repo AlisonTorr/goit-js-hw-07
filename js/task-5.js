@@ -10,10 +10,14 @@ const defaultOutPutRef = "незнакомец";
 //   } else nameOutputRef.textContent = defaultOutPutRef;
 // };
 
+// function handleOutputChange(event) {
+//   if (event.target.value) {
+//     nameOutputRef.textContent = event.target.value;
+//   } else nameOutputRef.textContent = defaultOutPutRef;
+// }
+
 function handleOutputChange(event) {
-  if (event.target.value) {
-    nameOutputRef.textContent = event.target.value;
-  } else nameOutputRef.textContent = defaultOutPutRef;
+  nameOutputRef.textContent = event.target.value;
 }
 
 inputRef.addEventListener("input", (event) => handleOutputChange());
