@@ -20,4 +20,4 @@ function handleOutputChange(event) {
 //   nameOutputRef.textContent = event.target.value;
 // }
 
-inputRef.addEventListener("input", handleOutputChange());
+inputRef.addEventListener("input", handleOutputChange);
