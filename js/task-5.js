@@ -5,7 +5,9 @@ const nameOutputRef = document.querySelector("#name-output");
 const defaultOutPutRef = "незнакомец";
 
 const handleOutputChange = (event) => {
-  nameOutputRef.textContent = event.target.value;
+  if (event.target.value) {
+    nameOutputRef.textContent = event.target.value;
+  } else nameOutputRef.textContent = defaultOutPutRef;
 };
 
 inputRef.addEventListener("input", () => handleOutputChange());
