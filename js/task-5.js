@@ -12,4 +12,4 @@ const handleOutputChange = (event) => {
     : defaultOutPutRef;
 };
 
-inputRef.addEventListener("input", () => handleOutputChange);
+inputRef.addEventListener("input", () => handleOutputChange());
