@@ -14,5 +14,8 @@ const decrement = (currentCounterValue) => {
   cuountValueRef.textContent = currentCounterValue;
 };
 
+const incrementBtnRef = document.querySelector(".js-increment-btn");
+incrementBtnRef.addEventListener("click", () => increment(currentCounterValue));
+
 const decrementBtnRef = document.querySelector(".js-decrement-btn");
 decrementBtnRef.addEventListener("click", () => decrement(currentCounterValue));
