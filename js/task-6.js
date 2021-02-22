@@ -22,4 +22,4 @@ const isValid = () => {
     : inputRef.classList.add(".invalid");
 };
 
-inputRef.addEventListener("blur", () => isValid);
+inputRef.addEventListener("blur", () => isValid(inputTextRef));
