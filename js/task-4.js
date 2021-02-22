@@ -1,12 +1,18 @@
 const cuountValueRef = document.querySelector("#value");
 console.log(cuountValueRef);
 
-const currentCounterValue = Number(cuountValueRef.textContent);
+let currentCounterValue = 0;
 console.log(currentCounterValue);
 
-const increment = (currentCounterValue) => (currentCounterValue += 1);
+const increment = (currentCounterValue) => {
+  currentCounterValue += 1;
+  return (cuountValueRef = currentCounterValue);
+};
 
-const decrement = (currentCounterValue) => (currentCounterValue -= 1);
+const decrement = (currentCounterValue) => {
+  currentCounterValue -= 1;
+  return (cuountValueRef = currentCounterValue);
+};
 
 const incrementBtnRef = document.querySelector(".js-increment-btn");
 incrementBtnRef.addEventListener("click", () => increment(currentCounterValue));
