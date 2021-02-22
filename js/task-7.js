@@ -1,7 +1,9 @@
-const inputRef = document.querySelector("#font-size-control");
+const controllerRef = document.querySelector("#font-size-control");
+const currentFontSize = controllerRef.value;
+console.log(currentFontSize);
 
 const textRef = document.querySelector("#text");
 
 const handleTextChange = () => (textRef.style.fontSize = "30px");
 
-inputRef.addEventListener("input", () => handleTextChange);
+controllerRef.addEventListener("input", handleTextChange);
