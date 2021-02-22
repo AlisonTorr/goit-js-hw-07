@@ -1,12 +1,14 @@
-const cuountValue = document.querySelector("#value");
+const cuountValueRef = document.querySelector("#value");
 console.log(cuountValue);
+const countValueText = cuountValueRef.textContent;
+console.log(countValueText);
 
-const increment = () => (cuountValue += 1);
+const increment = (countValueText) => (countValueText += 1);
 
-const decrement = () => (cuountValue -= 1);
+const decrement = (countValueText) => (countValueText -= 1);
 
 const incrementBtnRef = document.querySelector(".js-increment-btn");
-incrementBtnRef.addEventListener("click", () => cuountValue.increment);
+incrementBtnRef.addEventListener("click", () => countValueText.increment);
 
 const decrementBtnRef = document.querySelector(".js-decrement-btn");
-decrementBtnRef.addEventListener("click", () => cuountValue.decrement);
+decrementBtnRef.addEventListener("click", () => countValueText.decrement);

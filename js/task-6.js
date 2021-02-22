@@ -3,7 +3,13 @@ inputRef.classList.add(".primary");
 const validInputLengthRef = inputRef.getAttribute("data-length");
 console.log(validInputLengthRef);
 
-const inputLengthRef = inputRef.target.value.length;
+const handleInputChange = (event) => {
+  inputRef.textContent = event.target.value;
+};
+
+inputRef.addEventListener("input", handleInputChange);
+
+const inputLengthRef = inputRef.textContent.length;
 
 const isValid = () => {
   inputLengthRef === validInputLengthRef
