@@ -1,6 +1,6 @@
 const inputRef = document.querySelector("#validation-input");
 inputRef.classList.add(".primary");
-let inputTextRef = inputRef.textContent;
+const inputTextRef = inputRef.textContent;
 const validInputLengthRef = inputRef.getAttribute("data-length");
 console.log(validInputLengthRef);
 
@@ -22,8 +22,8 @@ const validate = (str) => {
   return str.length === validInputLengthRef;
 };
 
-const isValid = (event) => {
-  validate(event.target.value)
+const isValid = () => {
+  validate(inputTextRef)
     ? inputRef.classList.add(".valid")
     : inputRef.classList.add(".invalid");
 };
