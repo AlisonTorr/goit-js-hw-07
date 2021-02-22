@@ -1,11 +1,13 @@
 const inputRef = document.querySelector("#name-input");
 
 const nameOutputRef = document.querySelector("#name-output");
+const nameOutputTextRef = nameOutputRef.textContent;
+console.log(nameOutputTextRef);
+
 const defaultOutPutRef = "незнакомец";
 
-const handleInputChange = (event) => {
-  nameOutputRef.textContent =
-    inputRef === null ? defaultOutPutRef : event.target.value;
+const handleOutputChange = (event) => {
+  nameOutputTextRef = inputRef === null ? defaultOutPutRef : event.target.value;
 };
 
-inputRef.addEventListener("input", () => handleInputChange);
+inputRef.addEventListener("input", () => handleOutputChange);
