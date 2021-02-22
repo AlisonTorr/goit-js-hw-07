@@ -1,9 +1,9 @@
 const cuountValue = document.querySelector("#value");
 console.log(cuountValue);
 
-const increment = (cuountValue) => (cuountValue += 1);
+const increment = () => (cuountValue += 1);
 
-const decrement = (cuountValue) => (cuountValue -= 1);
+const decrement = () => (cuountValue -= 1);
 
 const incrementBtnRef = document.querySelector(".js-increment-btn");
 incrementBtnRef.addEventListener("click", () => cuountValue.increment);
