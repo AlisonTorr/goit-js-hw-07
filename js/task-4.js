@@ -15,11 +15,13 @@ const decrement = (currentCounterValue) => {
 };
 
 const incrementBtnRef = document.querySelector(".js-increment-btn");
-incrementBtnRef.addEventListener("click", () =>
+incrementBtnRef.addEventListener(
+  "click",
   increment(cuountValueRef.textContent)
 );
 
 const decrementBtnRef = document.querySelector(".js-decrement-btn");
-decrementBtnRef.addEventListener("click", () =>
+decrementBtnRef.addEventListener(
+  "click",
   decrement(cuountValueRef.textContent)
 );
