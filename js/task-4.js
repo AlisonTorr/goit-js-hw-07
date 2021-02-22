@@ -5,7 +5,7 @@ let currentCounterValue = 0;
 console.log(currentCounterValue);
 
 const increment = (currentCounterValue) => {
-  currentCounterValue += 1;
+  currentCounterValue++;
   cuountValueRef.textContent = currentCounterValue;
 };
 
