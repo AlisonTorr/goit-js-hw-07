@@ -8,7 +8,7 @@ const increment = () => (countValueText += 1);
 const decrement = () => (countValueText -= 1);
 
 const incrementBtnRef = document.querySelector(".js-increment-btn");
-incrementBtnRef.addEventListener("click", () => increment(countValueText));
+incrementBtnRef.addEventListener("click", () => increment());
 
 const decrementBtnRef = document.querySelector(".js-decrement-btn");
 decrementBtnRef.addEventListener("click", () => decrement(countValueText));
