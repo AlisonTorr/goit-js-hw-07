@@ -6,12 +6,12 @@ console.log(currentCounterValue);
 
 const increment = (currentCounterValue) => {
   currentCounterValue += 1;
-  return (cuountValueRef = currentCounterValue);
+  return (cuountValueRef.textContent = currentCounterValue);
 };
 
 const decrement = (currentCounterValue) => {
   currentCounterValue -= 1;
-  return (cuountValueRef = currentCounterValue);
+  return (cuountValueRef.textContent = currentCounterValue);
 };
 
 const incrementBtnRef = document.querySelector(".js-increment-btn");
