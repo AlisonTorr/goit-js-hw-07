@@ -5,8 +5,9 @@ console.log(`в списке ${categoriesNumberRef} категории`);
 const itemRefs = document.querySelectorAll(".item");
 console.log(itemRefs);
 
-const itemHeadRef = document.querySelector("h2");
-const itemNameRef = itemHeadRef.textContent;
+const itemHeadRef = document.querySelectorAll("h2");
+const itemHeadRefArr = Array.from(...itemHeadRef);
+const itemNameRef = itemHeadRefArr.forEach((head) => head.textContent);
 console.log(itemNameRef);
 
 const categoryDescRef = Array.from(...itemRefs);
