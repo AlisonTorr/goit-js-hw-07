@@ -10,7 +10,7 @@ console.log(textValueRef);
 const handleTextChange = (event) => {
   const value = event.target.value;
   console.log(value);
-  textRef.style.fontSize = value;
+  textRef.style.fontSize = value + "px";
 };
 
 controllerRef.addEventListener("input", handleTextChange);
