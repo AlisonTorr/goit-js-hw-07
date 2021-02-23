@@ -6,7 +6,8 @@ const textRef = document.querySelector("#text");
 // const textValueRef = textRef.textContent;
 
 const handleTextChange = (value) => {
-  textRef.style.fontSize = currentFontSizeRef += value;
+  let textFontSizeRef = textRef.style.fontSize;
+  textFontSizeRef = currentFontSizeRef += value;
 };
 
 controllerRef.addEventListener("input", handleTextChange);
