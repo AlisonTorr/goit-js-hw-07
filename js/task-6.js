@@ -2,7 +2,6 @@ const inputRef = document.querySelector("#validation-input");
 inputRef.classList.add(".primary");
 const inputTextRef = inputRef.textContent;
 const validInputLengthRef = inputRef.getAttribute("data-length");
-console.log(validInputLengthRef);
 
 // let inputLengthRef;
 

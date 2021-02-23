@@ -1,8 +1,6 @@
 const cuountValueRef = document.querySelector("#value");
-console.log(cuountValueRef);
 
 let currentCounterValue = 0;
-console.log(currentCounterValue);
 
 const increment = (currentCounterValue) => {
   currentCounterValue++;
