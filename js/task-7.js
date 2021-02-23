@@ -9,7 +9,7 @@ const handleTextChange = (event) => {
   const value = event.target.value;
   console.log(value);
   let textFontSizeRef = textRef.style.fontSize;
-  textFontSizeRef = currentFontSizeRef += value;
+  textFontSizeRef += value;
 };
 
 controllerRef.addEventListener("input", handleTextChange);
