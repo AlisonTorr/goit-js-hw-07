@@ -9,11 +9,11 @@ const validate = (str) => {
 
 const isValid = () => {
   if (validate(inputTextRef)) {
-    inputRef.classList.remove(".invalid");
-    inputRef.classList.add(".valid");
+    inputRef.classList.remove("invalid");
+    inputRef.classList.add("valid");
   } else {
-    inputRef.classList.remove(".valid");
-    inputRef.classList.add(".invalid");
+    inputRef.classList.remove("valid");
+    inputRef.classList.add("invalid");
   }
 };
 
