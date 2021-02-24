@@ -9,7 +9,7 @@ const validate = (str) => {
 
 const isValid = (event) => {
   console.log("event.target: ", event.target);
-  console.log("event.currentTarget: ", currentTarget);
+  console.log("event.currentTarget: ", event.currentTarget);
   if (validate(event.target.value.length)) {
     inputRef.classList.remove("invalid");
     inputRef.classList.add("valid");
