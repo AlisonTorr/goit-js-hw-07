@@ -1,7 +1,7 @@
 const inputRef = document.querySelector("#validation-input");
 inputRef.classList.add("primary");
 
-const validInputLengthRef = inputRef.dataset[length];
+const validInputLengthRef = 6;
 console.log(validInputLengthRef);
 
 const validate = (str) => {
