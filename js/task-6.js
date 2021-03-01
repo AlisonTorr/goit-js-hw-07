@@ -9,7 +9,7 @@ const validate = (str) => {
 };
 
 const isValid = (event) => {
-  if (validate(event.target.value.length)) {
+  if (validate(event.target.value)) {
     inputRef.classList.remove("invalid");
     inputRef.classList.add("valid");
   } else {
